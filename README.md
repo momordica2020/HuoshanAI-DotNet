@@ -1,3 +1,20 @@
+
+# HuoshanAI-DotNet  火山平台接口
+
+基于 OpenAI 接口的火山平台API接口实现。
+
+## 主要变化
+
+- 默认使用[火山api接口网址](https://ark.cn-beijing.volces.com/api)
+- 在json构造前后增加了一些火山特有的参数
+- 去掉了火山用不到的参数。
+- 其他适配性调整？
+
+以下是原始项目Readme
+
+
+---
+
 # OpenAI-DotNet
 
 [![Discord](https://img.shields.io/discord/855294214065487932.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/xQgMW9ufN4)

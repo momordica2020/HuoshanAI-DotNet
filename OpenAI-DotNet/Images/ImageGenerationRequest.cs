@@ -85,7 +85,8 @@ namespace OpenAI.Images
             string moderation = null,
             string background = null,
             string style = null,
-            string user = null)
+            string user = null,
+            bool watermark = false)
         {
             Prompt = prompt;
             Model = string.IsNullOrWhiteSpace(model?.Id) ? Models.Model.DallE_2 : model;
@@ -112,6 +113,8 @@ namespace OpenAI.Images
             {
                 Model = Models.Model.GPT_Image_1;
             }
+
+            Watermark = watermark;
         }
 
         /// <summary>
@@ -177,6 +180,12 @@ namespace OpenAI.Images
                           "URLs are only valid for 60 minutes after the image has been generated. " +
                           "`gpt-image-1` does not support urls and only supports base64-encoded images.")]
         public ImageResponseFormat ResponseFormat { get; }
+
+
+        [JsonPropertyName("watermark")]
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
+        [FunctionProperty("if have watermark")]
+        public bool Watermark { get; }
 
         /// <summary>
         /// The format in which the generated images are returned.
