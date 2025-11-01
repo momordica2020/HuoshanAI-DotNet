@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <Title>Huoshan API Proxy</Title>
+    <Product>Huoshan-DotNet-Proxy</Product>
+    <PackageId>Huoshan-DotNet-Proxy</PackageId>
+    <RootNamespace>HuoshanAI.Proxy</RootNamespace>
+    <Authors>Stephen Hodgson</Authors>
+    <Company>RageAgainstThePixel</Company>
+    <Description>A simple Proxy API gateway for Huoshan-DotNet to make authenticated requests from a front end application without exposing your API keys.</Description>
+    <Copyright>2024</Copyright>
+    <PackageLicenseExpression>CC0-1.0</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/RageAgainstThePixel/OpenAI-DotNet</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/RageAgainstThePixel/OpenAI-DotNet</RepositoryUrl>
+    <PackageTags>OpenAI, AI, ML, API, gpt, gpt-4, gpt-3.5-turbo, gpt-3, chatGPT, api-proxy, proxy, gateway</PackageTags>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
+    <PackageIcon>OpenAI-DotNet-Icon.png</PackageIcon>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SignAssembly>false</SignAssembly>
+    <ImplicitUsings>false</ImplicitUsings>
+    <Version>8.8.2</Version>
+    <PackageReleaseNotes>
+    </PackageReleaseNotes>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Huoshan-DotNet\Huoshan-DotNet.csproj" />
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Huoshan-DotNet\Assets\OpenAI-DotNet-Icon.png">
+      <Pack>true</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Readme.md">
+      <Pack>true</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+</Project>

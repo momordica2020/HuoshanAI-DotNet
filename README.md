@@ -1,7 +1,7 @@
 
 # HuoshanAI-DotNet  火山平台接口
 
-基于 OpenAI 接口的火山平台API接口实现。
+基于 HuoshanAI 接口的火山平台API接口实现。
 
 ## 主要变化
 
@@ -15,20 +15,20 @@
 
 ---
 
-# OpenAI-DotNet
+# HuoshanAI-DotNet
 
 [![Discord](https://img.shields.io/discord/855294214065487932.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/xQgMW9ufN4)
-[![NuGet version (OpenAI-DotNet)](https://img.shields.io/nuget/v/OpenAI-DotNet.svg?label=OpenAI-DotNet&logo=nuget)](https://www.nuget.org/packages/OpenAI-DotNet/)
-[![NuGet Downloads](https://img.shields.io/nuget/dt/OpenAI-DotNet)](https://www.nuget.org/packages/OpenAI-DotNet/)
-[![NuGet version (OpenAI-DotNet-Proxy)](https://img.shields.io/nuget/v/OpenAI-DotNet-Proxy.svg?label=OpenAI-DotNet-Proxy&logo=nuget)](https://www.nuget.org/packages/OpenAI-DotNet-Proxy/)
-[![Nuget Publish](https://github.com/RageAgainstThePixel/OpenAI-DotNet/actions/workflows/Publish-Nuget.yml/badge.svg)](https://github.com/RageAgainstThePixel/OpenAI-DotNet/actions/workflows/Publish-Nuget.yml)
+[![NuGet version (HuoshanAI-DotNet)](https://img.shields.io/nuget/v/HuoshanAI-DotNet.svg?label=HuoshanAI-DotNet&logo=nuget)](https://www.nuget.org/packages/HuoshanAI-DotNet/)
+[![NuGet Downloads](https://img.shields.io/nuget/dt/HuoshanAI-DotNet)](https://www.nuget.org/packages/HuoshanAI-DotNet/)
+[![NuGet version (HuoshanAI-DotNet-Proxy)](https://img.shields.io/nuget/v/HuoshanAI-DotNet-Proxy.svg?label=HuoshanAI-DotNet-Proxy&logo=nuget)](https://www.nuget.org/packages/HuoshanAI-DotNet-Proxy/)
+[![Nuget Publish](https://github.com/RageAgainstThePixel/HuoshanAI-DotNet/actions/workflows/Publish-Nuget.yml/badge.svg)](https://github.com/RageAgainstThePixel/HuoshanAI-DotNet/actions/workflows/Publish-Nuget.yml)
 
-A simple C# .NET client library for [OpenAI](https://openai.com/) to use though their RESTful API.
-Independently developed, this is not an official library and I am not affiliated with OpenAI.
-An OpenAI API account is required.
+A simple C# .NET client library for [HuoshanAI](https://HuoshanAI.com/) to use though their RESTful API.
+Independently developed, this is not an official library and I am not affiliated with HuoshanAI.
+An HuoshanAI API account is required.
 
-Originally Forked from [OpenAI-API-dotnet](https://github.com/OkGoDoIt/OpenAI-API-dotnet).
-More context [on Roger Pincombe's blog](https://rogerpincombe.com/openai-dotnet-api).
+Originally Forked from [HuoshanAI-API-dotnet](https://github.com/OkGoDoIt/HuoshanAI-API-dotnet).
+More context [on Roger Pincombe's blog](https://rogerpincombe.com/HuoshanAI-dotnet-api).
 
 ## Requirements
 
@@ -40,36 +40,36 @@ More context [on Roger Pincombe's blog](https://rogerpincombe.com/openai-dotnet-
 
 ### Install from NuGet
 
-Install package [`OpenAI-DotNet` from Nuget](https://www.nuget.org/packages/OpenAI-DotNet/).  Here's how via command line:
+Install package [`HuoshanAI-DotNet` from Nuget](https://www.nuget.org/packages/HuoshanAI-DotNet/).  Here's how via command line:
 
 powershell:
 
 ```terminal
-Install-Package OpenAI-DotNet
+Install-Package HuoshanAI-DotNet
 ```
 
 dotnet:
 
 ```terminal
-dotnet add package OpenAI-DotNet
+dotnet add package HuoshanAI-DotNet
 ```
 
-> Looking to [use OpenAI-DotNet in the Unity Game Engine](https://github.com/RageAgainstThePixel/com.openai.unity)? Check out our unity package on OpenUPM:
+> Looking to [use HuoshanAI-DotNet in the Unity Game Engine](https://github.com/RageAgainstThePixel/com.HuoshanAI.unity)? Check out our unity package on OpenUPM:
 >
->[![openupm](https://img.shields.io/npm/v/com.openai.unity?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.openai.unity/)
+>[![openupm](https://img.shields.io/npm/v/com.HuoshanAI.unity?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.HuoshanAI.unity/)
 
-## [Documentation](https://rageagainstthepixel.github.io/OpenAI-DotNet)
+## [Documentation](https://rageagainstthepixel.github.io/HuoshanAI-DotNet)
 
 > Check out our new api docs!
 
-<https://rageagainstthepixel.github.io/OpenAI-DotNet>
+<https://rageagainstthepixel.github.io/HuoshanAI-DotNet>
 
 ### Table of Contents
 
 - [Authentication](#authentication)
-- [Azure OpenAI](#azure-openai)
+- [Azure HuoshanAI](#azure-HuoshanAI)
   - [Azure Active Directory Authentication](#azure-active-directory-authentication)
-- [OpenAI API Proxy](#openai-api-proxy)
+- [HuoshanAI API Proxy](#HuoshanAI-api-proxy)
 - [Models](#models)
   - [List Models](#list-models)
   - [Retrieve Models](#retrieve-model)
@@ -181,7 +181,7 @@ dotnet add package OpenAI-DotNet
 - [Moderations](#moderations)
   - [Create Moderation](#create-moderation)
 
-### [Authentication](https://platform.openai.com/docs/api-reference/authentication)
+### [Authentication](https://platform.HuoshanAI.com/docs/api-reference/authentication)
 
 There are 3 ways to provide your API keys, in order of precedence:
 
@@ -198,20 +198,20 @@ There are 3 ways to provide your API keys, in order of precedence:
 > We recommended using the environment variables to load the API key instead of having it hard coded in your source. It is not recommended use this method in production, but only for accepting user credentials, local testing and quick start scenarios.
 
 ```csharp
-using var api = new OpenAIClient("sk-apiKey");
+using var api = new HuoshanAIClient("sk-apiKey");
 ```
 
-Or create a `OpenAIAuthentication` object manually
+Or create a `HuoshanAIAuthentication` object manually
 
 ```csharp
-using var api = new OpenAIClient(new OpenAIAuthentication("sk-apiKey", "org-yourOrganizationId", "proj_yourProjectId"));
+using var api = new HuoshanAIClient(new HuoshanAIAuthentication("sk-apiKey", "org-yourOrganizationId", "proj_yourProjectId"));
 ```
 
 #### Load key from configuration file
 
-Attempts to load api keys from a configuration file, by default `.openai` in the current directory, optionally traversing up the directory tree or in the user's home directory.
+Attempts to load api keys from a configuration file, by default `.HuoshanAI` in the current directory, optionally traversing up the directory tree or in the user's home directory.
 
-To create a configuration file, create a new text file named `.openai` and containing the line:
+To create a configuration file, create a new text file named `.HuoshanAI` and containing the line:
 
 > [!NOTE]
 > Organization and project id entries are optional.
@@ -229,50 +229,50 @@ To create a configuration file, create a new text file named `.openai` and conta
 ##### Deprecated format
 
 ```shell
-OPENAI_API_KEY=sk-aaaabbbbbccccddddd
-OPENAI_ORGANIZATION_ID=org-yourOrganizationId
-OPENAI_PROJECT_ID=proj_yourProjectId
+HuoshanAI_API_KEY=sk-aaaabbbbbccccddddd
+HuoshanAI_ORGANIZATION_ID=org-yourOrganizationId
+HuoshanAI_PROJECT_ID=proj_yourProjectId
 ```
 
-You can also load the configuration file directly with known path by calling static methods in `OpenAIAuthentication`:
+You can also load the configuration file directly with known path by calling static methods in `HuoshanAIAuthentication`:
 
-- Loads the default `.openai` config in the specified directory:
+- Loads the default `.HuoshanAI` config in the specified directory:
 
 ```csharp
-using var api = new OpenAIClient(OpenAIAuthentication.LoadFromDirectory("path/to/your/directory"));
+using var api = new HuoshanAIClient(HuoshanAIAuthentication.LoadFromDirectory("path/to/your/directory"));
 ```
 
-- Loads the configuration file from a specific path. File does not need to be named `.openai` as long as it conforms to the json format:
+- Loads the configuration file from a specific path. File does not need to be named `.HuoshanAI` as long as it conforms to the json format:
 
 ```csharp
-using var api = new OpenAIClient(OpenAIAuthentication.LoadFromPath("path/to/your/file.json"));
+using var api = new HuoshanAIClient(HuoshanAIAuthentication.LoadFromPath("path/to/your/file.json"));
 ```
 
 #### Use System Environment Variables
 
 Use your system's environment variables specify an api key and organization to use.
 
-- Use `OPENAI_API_KEY` for your api key.
-- Use `OPENAI_ORGANIZATION_ID` to specify an organization.
-- Use `OPENAI_PROJECT_ID` to specify a project.
+- Use `HuoshanAI_API_KEY` for your api key.
+- Use `HuoshanAI_ORGANIZATION_ID` to specify an organization.
+- Use `HuoshanAI_PROJECT_ID` to specify a project.
 
 ```csharp
-using var api = new OpenAIClient(OpenAIAuthentication.LoadFromEnvironment());
+using var api = new HuoshanAIClient(HuoshanAIAuthentication.LoadFromEnvironment());
 ```
 
-### Handling OpenAIClient and HttpClient Lifecycle
+### Handling HuoshanAIClient and HttpClient Lifecycle
 
-`OpenAIClient` implements `IDisposable` to manage the lifecycle of the resources it uses, including `HttpClient`. When you initialize `OpenAIClient`, it will create an internal `HttpClient` instance if one is not provided. This internal `HttpClient` is disposed of when `OpenAIClient` is disposed of. If you provide an external `HttpClient` instance to `OpenAIClient`, you are responsible for managing its disposal.
+`HuoshanAIClient` implements `IDisposable` to manage the lifecycle of the resources it uses, including `HttpClient`. When you initialize `HuoshanAIClient`, it will create an internal `HttpClient` instance if one is not provided. This internal `HttpClient` is disposed of when `HuoshanAIClient` is disposed of. If you provide an external `HttpClient` instance to `HuoshanAIClient`, you are responsible for managing its disposal.
 
-- If `OpenAIClient` creates its own `HttpClient`, it will also take care of disposing it when you dispose `OpenAIClient`.
-- If an external `HttpClient` is passed to `OpenAIClient`, it will not be disposed of by `OpenAIClient`. You must manage the disposal of the `HttpClient` yourself.
+- If `HuoshanAIClient` creates its own `HttpClient`, it will also take care of disposing it when you dispose `HuoshanAIClient`.
+- If an external `HttpClient` is passed to `HuoshanAIClient`, it will not be disposed of by `HuoshanAIClient`. You must manage the disposal of the `HttpClient` yourself.
 
-Please ensure to appropriately dispose of `OpenAIClient` to release resources timely and to prevent any potential memory or resource leaks in your application.
+Please ensure to appropriately dispose of `HuoshanAIClient` to release resources timely and to prevent any potential memory or resource leaks in your application.
 
 Typical usage with an internal `HttpClient`:
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 ```
 
 Custom `HttpClient` (which you must dispose of yourself):
@@ -280,50 +280,50 @@ Custom `HttpClient` (which you must dispose of yourself):
 ```csharp
 using var customHttpClient = new HttpClient();
 // set custom http client properties here
-var api = new OpenAIClient(client: customHttpClient);
+var api = new HuoshanAIClient(client: customHttpClient);
 ```
 
-### [Azure OpenAI](https://learn.microsoft.com/en-us/azure/cognitive-services/openai)
+### [Azure HuoshanAI](https://learn.microsoft.com/en-us/azure/cognitive-services/HuoshanAI)
 
-You can also choose to use Microsoft's Azure OpenAI deployments as well.
+You can also choose to use Microsoft's Azure HuoshanAI deployments as well.
 
 You can find the required information in the Azure Playground by clicking the `View Code` button and view a URL like this:
 
 ```markdown
-https://{your-resource-name}.openai.azure.com/openai/deployments/{deployment-id}/chat/completions?api-version={api-version}
+https://{your-resource-name}.HuoshanAI.azure.com/HuoshanAI/deployments/{deployment-id}/chat/completions?api-version={api-version}
 ```
 
-- `your-resource-name` The name of your Azure OpenAI Resource.
+- `your-resource-name` The name of your Azure HuoshanAI Resource.
 - `deployment-id` The deployment name you chose when you deployed the model.
 - `api-version` The API version to use for this operation. This follows the YYYY-MM-DD format.
 
-To setup the client to use your deployment, you'll need to pass in `OpenAISettings` into the client constructor.
+To setup the client to use your deployment, you'll need to pass in `HuoshanAISettings` into the client constructor.
 
 ```csharp
-var auth = new OpenAIAuthentication("sk-apiKey");
-var settings = new OpenAISettings(resourceName: "your-resource-name", deploymentId: "deployment-id", apiVersion: "api-version");
-using var api = new OpenAIClient(auth, settings);
+var auth = new HuoshanAIAuthentication("sk-apiKey");
+var settings = new HuoshanAISettings(resourceName: "your-resource-name", deploymentId: "deployment-id", apiVersion: "api-version");
+using var api = new HuoshanAIClient(auth, settings);
 ```
 
-#### [Azure Active Directory Authentication](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/reference#authentication)
+#### [Azure Active Directory Authentication](https://learn.microsoft.com/en-us/azure/cognitive-services/HuoshanAI/reference#authentication)
 
-[Authenticate with MSAL](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet) as usual and get access token, then use the access token when creating your `OpenAIAuthentication`. Then be sure to set useAzureActiveDirectory to true when creating your `OpenAISettings`.
+[Authenticate with MSAL](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet) as usual and get access token, then use the access token when creating your `HuoshanAIAuthentication`. Then be sure to set useAzureActiveDirectory to true when creating your `HuoshanAISettings`.
 
 [Tutorial: Desktop app that calls web APIs: Acquire a token](https://learn.microsoft.com/en-us/azure/active-directory/develop/scenario-desktop-acquire-token?tabs=dotnet)
 
 ```csharp
 // get your access token using any of the MSAL methods
 var accessToken = result.AccessToken;
-var auth = new OpenAIAuthentication(accessToken);
-var settings = new OpenAISettings(resourceName: "your-resource", deploymentId: "deployment-id", apiVersion: "api-version", useActiveDirectoryAuthentication: true);
-using var api = new OpenAIClient(auth, settings);
+var auth = new HuoshanAIAuthentication(accessToken);
+var settings = new HuoshanAISettings(resourceName: "your-resource", deploymentId: "deployment-id", apiVersion: "api-version", useActiveDirectoryAuthentication: true);
+using var api = new HuoshanAIClient(auth, settings);
 ```
 
-### [OpenAI API Proxy](OpenAI-DotNet-Proxy/Readme.md)
+### [HuoshanAI API Proxy](HuoshanAI-DotNet-Proxy/Readme.md)
 
-[![NuGet version (OpenAI-DotNet-Proxy)](https://img.shields.io/nuget/v/OpenAI-DotNet-Proxy.svg?label=OpenAI-DotNet-Proxy&logo=nuget)](https://www.nuget.org/packages/OpenAI-DotNet-Proxy/)
+[![NuGet version (HuoshanAI-DotNet-Proxy)](https://img.shields.io/nuget/v/HuoshanAI-DotNet-Proxy.svg?label=HuoshanAI-DotNet-Proxy&logo=nuget)](https://www.nuget.org/packages/HuoshanAI-DotNet-Proxy/)
 
-Using either the [OpenAI-DotNet](https://github.com/RageAgainstThePixel/OpenAI-DotNet) or [com.openai.unity](https://github.com/RageAgainstThePixel/com.openai.unity) packages directly in your front-end app may expose your API keys and other sensitive information. To mitigate this risk, it is recommended to set up an intermediate API that makes requests to OpenAI on behalf of your front-end app. This library can be utilized for both front-end and intermediary host configurations, ensuring secure communication with the OpenAI API.
+Using either the [HuoshanAI-DotNet](https://github.com/RageAgainstThePixel/HuoshanAI-DotNet) or [com.HuoshanAI.unity](https://github.com/RageAgainstThePixel/com.HuoshanAI.unity) packages directly in your front-end app may expose your API keys and other sensitive information. To mitigate this risk, it is recommended to set up an intermediate API that makes requests to HuoshanAI on behalf of your front-end app. This library can be utilized for both front-end and intermediary host configurations, ensuring secure communication with the HuoshanAI API.
 
 #### Front End Example
 
@@ -331,35 +331,35 @@ In the front end example, you will need to securely authenticate your users usin
 
 Follow these steps:
 
-1. Setup a new project using either the [OpenAI-DotNet](https://github.com/RageAgainstThePixel/OpenAI-DotNet) or [com.openai.unity](https://github.com/RageAgainstThePixel/com.openai.unity) packages.
+1. Setup a new project using either the [HuoshanAI-DotNet](https://github.com/RageAgainstThePixel/HuoshanAI-DotNet) or [com.HuoshanAI.unity](https://github.com/RageAgainstThePixel/com.HuoshanAI.unity) packages.
 2. Authenticate users with your OAuth provider.
-3. After successful authentication, create a new `OpenAIAuthentication` object and pass in the custom token with the prefix `sess-`.
-4. Create a new `OpenAISettings` object and specify the domain where your intermediate API is located.
-5. Pass your new `auth` and `settings` objects to the `OpenAIClient` constructor when you create the client instance.
+3. After successful authentication, create a new `HuoshanAIAuthentication` object and pass in the custom token with the prefix `sess-`.
+4. Create a new `HuoshanAISettings` object and specify the domain where your intermediate API is located.
+5. Pass your new `auth` and `settings` objects to the `HuoshanAIClient` constructor when you create the client instance.
 
 Here's an example of how to set up the front end:
 
 ```csharp
 var authToken = await LoginAsync();
-var auth = new OpenAIAuthentication($"sess-{authToken}");
-var settings = new OpenAISettings(domain: "api.your-custom-domain.com");
-using var api = new OpenAIClient(auth, settings);
+var auth = new HuoshanAIAuthentication($"sess-{authToken}");
+var settings = new HuoshanAISettings(domain: "api.your-custom-domain.com");
+using var api = new HuoshanAIClient(auth, settings);
 ```
 
-This setup allows your front end application to securely communicate with your backend that will be using the OpenAI-DotNet-Proxy, which then forwards requests to the OpenAI API. This ensures that your OpenAI API keys and other sensitive information remain secure throughout the process.
+This setup allows your front end application to securely communicate with your backend that will be using the HuoshanAI-DotNet-Proxy, which then forwards requests to the HuoshanAI API. This ensures that your HuoshanAI API keys and other sensitive information remain secure throughout the process.
 
 #### Back End Example
 
-In this example, we demonstrate how to set up and use `OpenAIProxy` in a new ASP.NET Core web app. The proxy server will handle authentication and forward requests to the OpenAI API, ensuring that your API keys and other sensitive information remain secure.
+In this example, we demonstrate how to set up and use `HuoshanAIProxy` in a new ASP.NET Core web app. The proxy server will handle authentication and forward requests to the HuoshanAI API, ensuring that your API keys and other sensitive information remain secure.
 
 1. Create a new [ASP.NET Core minimal web API](https://learn.microsoft.com/en-us/aspnet/core/tutorials/min-web-api?view=aspnetcore-6.0) project.
-2. Add the OpenAI-DotNet nuget package to your project.
-    - Powershell install: `Install-Package OpenAI-DotNet-Proxy`
-    - Dotnet install: `dotnet add package OpenAI-DotNet-Proxy`
-    - Manually editing .csproj: `<PackageReference Include="OpenAI-DotNet-Proxy" />`
+2. Add the HuoshanAI-DotNet nuget package to your project.
+    - Powershell install: `Install-Package HuoshanAI-DotNet-Proxy`
+    - Dotnet install: `dotnet add package HuoshanAI-DotNet-Proxy`
+    - Manually editing .csproj: `<PackageReference Include="HuoshanAI-DotNet-Proxy" />`
 3. Create a new class that inherits from `AbstractAuthenticationFilter` and override the `ValidateAuthentication` method. This will implement the `IAuthenticationFilter` that you will use to check user session token against your internal server.
-4. In `Program.cs`, create a new proxy web application by calling `OpenAIProxy.CreateWebApplication` method, passing your custom `AuthenticationFilter` as a type argument.
-5. Create `OpenAIAuthentication` and `OpenAISettings` as you would normally with your API keys, org id, or Azure settings.
+4. In `Program.cs`, create a new proxy web application by calling `HuoshanAIProxy.CreateWebApplication` method, passing your custom `AuthenticationFilter` as a type argument.
+5. Create `HuoshanAIAuthentication` and `HuoshanAISettings` as you would normally with your API keys, org id, or Azure settings.
 
 ```csharp
 public partial class Program
@@ -381,23 +381,23 @@ public partial class Program
 
     public static void Main(string[] args)
     {
-        var auth = OpenAIAuthentication.LoadFromEnvironment();
-        var settings = new OpenAISettings(/* your custom settings if using Azure OpenAI */);
-        using var openAIClient = new OpenAIClient(auth, settings);
-        OpenAIProxy.CreateWebApplication<AuthenticationFilter>(args, openAIClient).Run();
+        var auth = HuoshanAIAuthentication.LoadFromEnvironment();
+        var settings = new HuoshanAISettings(/* your custom settings if using Azure HuoshanAI */);
+        using var HuoshanAIClient = new HuoshanAIClient(auth, settings);
+        HuoshanAIProxy.CreateWebApplication<AuthenticationFilter>(args, HuoshanAIClient).Run();
     }
 }
 ```
 
-Once you have set up your proxy server, your end users can now make authenticated requests to your proxy api instead of directly to the OpenAI API. The proxy server will handle authentication and forward requests to the OpenAI API, ensuring that your API keys and other sensitive information remain secure.
+Once you have set up your proxy server, your end users can now make authenticated requests to your proxy api instead of directly to the HuoshanAI API. The proxy server will handle authentication and forward requests to the HuoshanAI API, ensuring that your API keys and other sensitive information remain secure.
 
 ---
 
-### [Models](https://platform.openai.com/docs/api-reference/models)
+### [Models](https://platform.HuoshanAI.com/docs/api-reference/models)
 
-List and describe the various models available in the API. You can refer to the [Models documentation](https://platform.openai.com/docs/models) to understand what models are available and the differences between them.
+List and describe the various models available in the API. You can refer to the [Models documentation](https://platform.HuoshanAI.com/docs/models) to understand what models are available and the differences between them.
 
-Also checkout [model endpoint compatibility](https://platform.openai.com/docs/models/model-endpoint-compatibility) to understand which models work with which endpoints.
+Also checkout [model endpoint compatibility](https://platform.HuoshanAI.com/docs/models/model-endpoint-compatibility) to understand which models work with which endpoints.
 
 To specify a custom model not pre-defined in this library:
 
@@ -405,14 +405,14 @@ To specify a custom model not pre-defined in this library:
 var model = new Model("model-id");
 ```
 
-The Models API is accessed via `OpenAIClient.ModelsEndpoint`
+The Models API is accessed via `HuoshanAIClient.ModelsEndpoint`
 
-#### [List models](https://platform.openai.com/docs/api-reference/models/list)
+#### [List models](https://platform.HuoshanAI.com/docs/api-reference/models/list)
 
 Lists the currently available models, and provides basic information about each one such as the owner and availability.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var models = await api.ModelsEndpoint.GetModelsAsync();
 
 foreach (var model in models)
@@ -421,50 +421,50 @@ foreach (var model in models)
 }
 ```
 
-#### [Retrieve model](https://platform.openai.com/docs/api-reference/models/retrieve)
+#### [Retrieve model](https://platform.HuoshanAI.com/docs/api-reference/models/retrieve)
 
 Retrieves a model instance, providing basic information about the model such as the owner and permissions.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var model = await api.ModelsEndpoint.GetModelDetailsAsync("gpt-4o");
 Console.WriteLine(model.ToString());
 ```
 
-#### [Delete Fine Tuned Model](https://platform.openai.com/docs/api-reference/fine-tunes/delete-model)
+#### [Delete Fine Tuned Model](https://platform.HuoshanAI.com/docs/api-reference/fine-tunes/delete-model)
 
 Delete a fine-tuned model. You must have the Owner role in your organization.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var isDeleted = await api.ModelsEndpoint.DeleteFineTuneModelAsync("your-fine-tuned-model");
 Assert.IsTrue(isDeleted);
 ```
 
 ---
 
-### [Responses](https://platform.openai.com/docs/api-reference/responses)
+### [Responses](https://platform.HuoshanAI.com/docs/api-reference/responses)
 
-OpenAI's most advanced interface for generating model responses. Supports text and image inputs, and text outputs. Create stateful interactions with the model, using the output of previous responses as input. Extend the model's capabilities with built-in tools for file search, web search, computer use, and more. Allow the model access to external systems and data using function calling.
+HuoshanAI's most advanced interface for generating model responses. Supports text and image inputs, and text outputs. Create stateful interactions with the model, using the output of previous responses as input. Extend the model's capabilities with built-in tools for file search, web search, computer use, and more. Allow the model access to external systems and data using function calling.
 
 - Related Guides:
-  - [QuickStart](https://platform.openai.com/docs/quickstart?api-mode=responses)
-  - [Text Inputs and Outputs](https://platform.openai.com/docs/guides/text?api-mode=responses)
-  - [Image Inputs](https://platform.openai.com/docs/guides/images?api-mode=responses)
-  - [Structured Outputs](https://platform.openai.com/docs/guides/structured-outputs?api-mode=responses)
-  - [Conversation State](https://platform.openai.com/docs/guides/conversation-state?api-mode=responses)
-  - [Extend the model with tools](https://platform.openai.com/docs/guides/tools?api-mode=responses)
+  - [QuickStart](https://platform.HuoshanAI.com/docs/quickstart?api-mode=responses)
+  - [Text Inputs and Outputs](https://platform.HuoshanAI.com/docs/guides/text?api-mode=responses)
+  - [Image Inputs](https://platform.HuoshanAI.com/docs/guides/images?api-mode=responses)
+  - [Structured Outputs](https://platform.HuoshanAI.com/docs/guides/structured-outputs?api-mode=responses)
+  - [Conversation State](https://platform.HuoshanAI.com/docs/guides/conversation-state?api-mode=responses)
+  - [Extend the model with tools](https://platform.HuoshanAI.com/docs/guides/tools?api-mode=responses)
 
-The Response API is accessed via `OpenAIClient.ResponsesEndpoint`
+The Response API is accessed via `HuoshanAIClient.ResponsesEndpoint`
 
-#### [Create Response](https://platform.openai.com/docs/api-reference/responses/create)
+#### [Create Response](https://platform.HuoshanAI.com/docs/api-reference/responses/create)
 
 Creates a model response. Provide text or image inputs to generate text or JSON outputs. Have the model call your own custom code or use built-in tools like web search or file search to use your own data as input for the model's response.
 
 ##### Simple Response With Text
 
 ```csharp
-var api = new OpenAIClient();
+var api = new HuoshanAIClient();
 var response = await api.ResponsesEndpoint.CreateModelResponseAsync("Tell me a three sentence bedtime story about a unicorn.");
 var responseItem = response.Output.LastOrDefault();
 Console.WriteLine($"{messageItem.Role}:{textContent.Text}");
@@ -474,7 +474,7 @@ response.PrintUsage();
 ##### Streaming Response with Function Calling
 
 ```csharp
-var api = new OpenAIClient();
+var api = new HuoshanAIClient();
 var conversation = new List<IResponseItem>
 {
     new Message(Role.System, "You are a helpful assistant."),
@@ -508,22 +508,22 @@ Console.WriteLine($"{responseItem.Role}: {responseItem}");
 response.PrintUsage();
 ```
 
-#### [Get Response](https://platform.openai.com/docs/api-reference/responses/get)
+#### [Get Response](https://platform.HuoshanAI.com/docs/api-reference/responses/get)
 
 Retrieves a model response with the given ID.
 
 ```csharp
-var api = new OpenAIClient();
+var api = new HuoshanAIClient();
 var response = await api.ResponsesEndpoint.GetModelResponseAsync("response-id");
 Console.WriteLine(response.ToString());
 ```
 
-#### [List Input Items](https://platform.openai.com/docs/api-reference/responses/input-items)
+#### [List Input Items](https://platform.HuoshanAI.com/docs/api-reference/responses/input-items)
 
 Returns a list of input items for a given response.
 
 ```csharp
-var api = new OpenAIClient();
+var api = new HuoshanAIClient();
 var responseInputItems = await api.ResponsesEndpoint.ListInputItemsAsync("response-id");
 foreach (var item in responseInputItems)
 {
@@ -531,7 +531,7 @@ foreach (var item in responseInputItems)
 }
 ```
 
-#### [Cancel Response](https://platform.openai.com/docs/api-reference/responses/cancel)
+#### [Cancel Response](https://platform.HuoshanAI.com/docs/api-reference/responses/cancel)
 
 Cancels a model response with the given ID.
 
@@ -539,63 +539,63 @@ Cancels a model response with the given ID.
 > Only responses created with the background parameter set to true can be cancelled.
 
 ```csharp
-var api = new OpenAIClient();
+var api = new HuoshanAIClient();
 var isCancelled = await api.ResponsesEndpoint.CancelModelResponseAsync("response-id");
 Assert.IsTrue(isCancelled);
 ```
 
-#### [Delete Response](https://platform.openai.com/docs/api-reference/responses/delete)
+#### [Delete Response](https://platform.HuoshanAI.com/docs/api-reference/responses/delete)
 
 Deletes a model response with the given ID.
 
 ```csharp
-var api = new OpenAIClient();
+var api = new HuoshanAIClient();
 var isDeleted = await api.ResponsesEndpoint.DeleteModelResponseAsync("response-id");
 Assert.IsTrue(isDeleted);
 ```
 
 ---
 
-### [Conversations](https://platform.openai.com/docs/api-reference/conversations)
+### [Conversations](https://platform.HuoshanAI.com/docs/api-reference/conversations)
 
 Create and manage conversations to store and retrieve conversation state across Response API calls.
 
-The Conversations API is accessed via `OpenAIClient.ConversationsEndpoint`
+The Conversations API is accessed via `HuoshanAIClient.ConversationsEndpoint`
 
-#### [Create Conversation](https://platform.openai.com/docs/api-reference/conversations/create)
+#### [Create Conversation](https://platform.HuoshanAI.com/docs/api-reference/conversations/create)
 
 Create a conversation.
 
 ```csharp
-var api = new OpenAIClient();
+var api = new HuoshanAIClient();
 conversation = await api.ConversationsEndpoint.CreateConversationAsync(
     new CreateConversationRequest(new Message(Role.Developer, systemPrompt)));
 Console.WriteLine(conversation.ToString());
 // use the conversation object when creating responses.
 var request = await api.ResponsesEndpoint.CreateResponseAsync(
     new CreateResponseRequest(textInput: "Hello!", conversationId: conversation, model: Model.GPT5_Nano));
-var response = await openAI.ResponsesEndpoint.CreateModelResponseAsync(request);
+var response = await HuoshanAI.ResponsesEndpoint.CreateModelResponseAsync(request);
 var responseItem = response.Output.LastOrDefault();
 Console.WriteLine($"{responseItem.Role}:{responseItem}");
 response.PrintUsage();
 ```
 
-#### [Retrieve Conversation](https://platform.openai.com/docs/api-reference/conversations/retrieve)
+#### [Retrieve Conversation](https://platform.HuoshanAI.com/docs/api-reference/conversations/retrieve)
 
 Get a conversation by id.
 
 ```csharp
-var api = new OpenAIClient();
+var api = new HuoshanAIClient();
 var conversation = await api.ConversationsEndpoint.GetConversationAsync("conversation-id");
 Console.WriteLine(conversation.ToString());
 ```
 
-#### [Update Conversation](https://platform.openai.com/docs/api-reference/conversations/update)
+#### [Update Conversation](https://platform.HuoshanAI.com/docs/api-reference/conversations/update)
 
 Update a conversation with custom metadata.
 
 ```csharp
-var api = new OpenAIClient();
+var api = new HuoshanAIClient();
 var metadata = new Dictionary<string, object>
 {
     { "favorite_color", "blue" },
@@ -604,22 +604,22 @@ var metadata = new Dictionary<string, object>
 var updatedConversation = await api.ConversationsEndpoint.UpdateConversationAsync("conversation-id", metadata);
 ```
 
-#### [Delete Conversation](https://platform.openai.com/docs/api-reference/conversations/delete)
+#### [Delete Conversation](https://platform.HuoshanAI.com/docs/api-reference/conversations/delete)
 
 Delete a conversation by id.
 
 ```csharp
-var api = new OpenAIClient();
+var api = new HuoshanAIClient();
 var isDeleted = await api.ConversationsEndpoint.DeleteConversationAsync("conversation-id");
 Assert.IsTrue(isDeleted);
 ```
 
-#### [List Conversation Items](https://platform.openai.com/docs/api-reference/conversations/list-items)
+#### [List Conversation Items](https://platform.HuoshanAI.com/docs/api-reference/conversations/list-items)
 
 List all items for a conversation with the given ID.
 
 ```csharp
-var api = new OpenAIClient();
+var api = new HuoshanAIClient();
 var query = new ListQuery(limit: 10);
 var items = await api.ConversationsEndpoint.ListConversationItemsAsync("conversation-id", query);
 
@@ -629,12 +629,12 @@ foreach (var item in items)
 }
 ```
 
-#### [Create Conversation Item](https://platform.openai.com/docs/api-reference/conversations/create-item)
+#### [Create Conversation Item](https://platform.HuoshanAI.com/docs/api-reference/conversations/create-item)
 
 Create a new conversation item for a conversation with the given ID.
 
 ```csharp
-var api = new OpenAIClient();
+var api = new HuoshanAIClient();
 var items = new List<IResponseItem>
 {
     new Message(Role.User, "Hello!"),
@@ -648,45 +648,45 @@ foreach (var item in addedItems)
 }
 ```
 
-#### [Retrieve Conversation Item](https://platform.openai.com/docs/api-reference/conversations/retrieve-item)
+#### [Retrieve Conversation Item](https://platform.HuoshanAI.com/docs/api-reference/conversations/retrieve-item)
 
 Get a conversation item by id.
 
 ```csharp
-var api = new OpenAIClient();
+var api = new HuoshanAIClient();
 var item = await api.ConversationsEndpoint.GetConversationItemAsync("conversation-id", "item-id");
 Console.WriteLine(item.ToJsonString());
 ```
 
-#### [Delete Conversation Item](https://platform.openai.com/docs/api-reference/conversations/delete-item)
+#### [Delete Conversation Item](https://platform.HuoshanAI.com/docs/api-reference/conversations/delete-item)
 
 Delete a conversation item by id.
 
 ```csharp
-var api = new OpenAIClient();
+var api = new HuoshanAIClient();
 var isDeleted = await api.ConversationsEndpoint.DeleteConversationItemAsync("conversation-id", "item-id");
 Assert.IsTrue(isDeleted);
 ```
 
 ---
 
-### [Realtime](https://platform.openai.com/docs/api-reference/realtime)
+### [Realtime](https://platform.HuoshanAI.com/docs/api-reference/realtime)
 
 > [!WARNING]
 > Beta Feature. API subject to breaking changes.
 
-- [Realtime Guide](https://platform.openai.com/docs/guides/realtime)
+- [Realtime Guide](https://platform.HuoshanAI.com/docs/guides/realtime)
 
 The Realtime API enables you to build low-latency, multi-modal conversational experiences. It currently supports text and audio as both input and output, as well as function calling.
 
-The Assistants API is accessed via `OpenAIClient.RealtimeEndpoint`
+The Assistants API is accessed via `HuoshanAIClient.RealtimeEndpoint`
 
 #### Create Realtime Session
 
 Here is a simple example of how to create a realtime session and to send and receive messages from the model.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var cancellationTokenSource = new CancellationTokenSource();
 var tools = new List<Tool>
 {
@@ -729,15 +729,15 @@ void ServerEvents(IServerEvent @event)
 
 The library implements `IClientEvent` interface for outgoing client sent events.
 
-- [`UpdateSessionRequest`](https://platform.openai.com/docs/api-reference/realtime-client-events/session/update): Update the session with new session options.
-- [`InputAudioBufferAppendRequest`](https://platform.openai.com/docs/api-reference/realtime-client-events/input-audio-buffer/append): Append audio to the input audio buffer. (Unlike made other client events, the server will not send a confirmation response to this event).
-- [`InputAudioBufferCommitRequest`](https://platform.openai.com/docs/api-reference/realtime-client-events/input-audio-buffer/commit): Commit the input audio buffer. (When in Server VAD mode, the client does not need to send this event).
-- [`InputAudioBufferClearRequest`](https://platform.openai.com/docs/api-reference/realtime-client-events/input-audio-buffer/clear): Clear the input audio buffer.
-- [`ConversationItemCreateRequest`](https://platform.openai.com/docs/api-reference/realtime-client-events/conversation/item/create): Create a new conversation item. This is the main way to send user content to the model.
-- [`ConversationItemTruncateRequest`](https://platform.openai.com/docs/api-reference/realtime-client-events/conversation/item/truncate): Send this event to truncate a previous assistant message’s audio.
-- [`ConversationItemDeleteRequest`](https://platform.openai.com/docs/api-reference/realtime-client-events/conversation/item/delete): Delete a conversation item. This is useful when you want to remove a message from the conversation history.
-- [`CreateResponseRequest`](https://platform.openai.com/docs/api-reference/realtime-client-events/response/create): Create a response from the model. Send this event after creating new conversation items or invoking tool calls. This will trigger the model to generate a response.
-- [`ResponseCancelRequest`](https://platform.openai.com/docs/api-reference/realtime-client-events/response/cancel) -Send this event to cancel an in-progress response.
+- [`UpdateSessionRequest`](https://platform.HuoshanAI.com/docs/api-reference/realtime-client-events/session/update): Update the session with new session options.
+- [`InputAudioBufferAppendRequest`](https://platform.HuoshanAI.com/docs/api-reference/realtime-client-events/input-audio-buffer/append): Append audio to the input audio buffer. (Unlike made other client events, the server will not send a confirmation response to this event).
+- [`InputAudioBufferCommitRequest`](https://platform.HuoshanAI.com/docs/api-reference/realtime-client-events/input-audio-buffer/commit): Commit the input audio buffer. (When in Server VAD mode, the client does not need to send this event).
+- [`InputAudioBufferClearRequest`](https://platform.HuoshanAI.com/docs/api-reference/realtime-client-events/input-audio-buffer/clear): Clear the input audio buffer.
+- [`ConversationItemCreateRequest`](https://platform.HuoshanAI.com/docs/api-reference/realtime-client-events/conversation/item/create): Create a new conversation item. This is the main way to send user content to the model.
+- [`ConversationItemTruncateRequest`](https://platform.HuoshanAI.com/docs/api-reference/realtime-client-events/conversation/item/truncate): Send this event to truncate a previous assistant message’s audio.
+- [`ConversationItemDeleteRequest`](https://platform.HuoshanAI.com/docs/api-reference/realtime-client-events/conversation/item/delete): Delete a conversation item. This is useful when you want to remove a message from the conversation history.
+- [`CreateResponseRequest`](https://platform.HuoshanAI.com/docs/api-reference/realtime-client-events/response/create): Create a response from the model. Send this event after creating new conversation items or invoking tool calls. This will trigger the model to generate a response.
+- [`ResponseCancelRequest`](https://platform.HuoshanAI.com/docs/api-reference/realtime-client-events/response/cancel) -Send this event to cancel an in-progress response.
 
 ##### Sending Client Events
 
@@ -762,25 +762,25 @@ Console.WriteLine(serverEvent.ToJsonString());
 
 The library implements `IServerEvent` interface for incoming server sent events.
 
-- [`RealtimeEventError`](https://platform.openai.com/docs/api-reference/realtime-server-events/error): Returned when an error occurs, which could be a client problem or a server problem.
-- [`SessionResponse`](https://platform.openai.com/docs/api-reference/realtime-server-events/session): Returned for both a `session.created` and `session.updated` event.
-- [`RealtimeConversationResponse`](https://platform.openai.com/docs/api-reference/realtime-server-events/conversation/created): Returned when a new conversation item is created.
-- [`ConversationItemCreatedResponse`](https://platform.openai.com/docs/api-reference/realtime-server-events/conversation/item/created): Returned when a new conversation item is created.
-- [`ConversationItemInputAudioTranscriptionResponse`](https://platform.openai.com/docs/api-reference/realtime-server-events/conversation): Returned when the input audio transcription is completed or failed.
-- [`ConversationItemTruncatedResponse`](https://platform.openai.com/docs/api-reference/realtime-server-events/conversation/item/truncated): Returned when a conversation item is truncated.
-- [`ConversationItemDeletedResponse`](https://platform.openai.com/docs/api-reference/realtime-server-events/conversation/item/deleted): Returned when a conversation item is deleted.
-- [`InputAudioBufferCommittedResponse`](https://platform.openai.com/docs/api-reference/realtime-server-events/input_audio_buffer/committed): Returned when an input audio buffer is committed, either by the client or automatically in server VAD mode.
-- [`InputAudioBufferClearedResponse`](https://platform.openai.com/docs/api-reference/realtime-server-events/input_audio_buffer/cleared): Returned when an input audio buffer is cleared.
-- [`InputAudioBufferStartedResponse`](https://platform.openai.com/docs/api-reference/realtime-server-events/input_audio_buffer/speech_started): Sent by the server when in server_vad mode to indicate that speech has been detected in the audio buffer. This can happen any time audio is added to the buffer (unless speech is already detected). The client may want to use this event to interrupt audio playback or provide visual feedback to the user.
-- [`InputAudioBufferStoppedResponse`](https://platform.openai.com/docs/api-reference/realtime-server-events/input_audio_buffer/speech_stopped): Returned in server_vad mode when the server detects the end of speech in the audio buffer.
-- [`RealtimeResponse`](https://platform.openai.com/docs/api-reference/realtime-server-events/response): Returned when a response is created or done.
-- [`ResponseOutputItemResponse`](https://platform.openai.com/docs/api-reference/realtime-server-events/response/output_item): Returned when a response output item is added or done.
-- [`ResponseContentPartResponse`](https://platform.openai.com/docs/api-reference/realtime-server-events/response/content_part): Returned when a response content part is added or done.
-- [`ResponseTextResponse`](https://platform.openai.com/docs/api-reference/realtime-server-events/response/text): Returned when a response text is updated or done.
-- [`ResponseAudioTranscriptResponse`](https://platform.openai.com/docs/api-reference/realtime-server-events/response/audio_transcript): Returned when a response audio transcript is updated or done.
-- [`ResponseAudioResponse`](https://platform.openai.com/docs/api-reference/realtime-server-events/response/audio): Returned when a response audio is updated or done.
-- [`ResponseFunctionCallArgumentsResponse`](https://platform.openai.com/docs/api-reference/realtime-server-events/response/function_call_arguments): Returned when a response function call arguments are updated or done.
-- [`RateLimitsResponse`](https://platform.openai.com/docs/api-reference/realtime-server-events/rate_limits): Returned when rate limits are updated.
+- [`RealtimeEventError`](https://platform.HuoshanAI.com/docs/api-reference/realtime-server-events/error): Returned when an error occurs, which could be a client problem or a server problem.
+- [`SessionResponse`](https://platform.HuoshanAI.com/docs/api-reference/realtime-server-events/session): Returned for both a `session.created` and `session.updated` event.
+- [`RealtimeConversationResponse`](https://platform.HuoshanAI.com/docs/api-reference/realtime-server-events/conversation/created): Returned when a new conversation item is created.
+- [`ConversationItemCreatedResponse`](https://platform.HuoshanAI.com/docs/api-reference/realtime-server-events/conversation/item/created): Returned when a new conversation item is created.
+- [`ConversationItemInputAudioTranscriptionResponse`](https://platform.HuoshanAI.com/docs/api-reference/realtime-server-events/conversation): Returned when the input audio transcription is completed or failed.
+- [`ConversationItemTruncatedResponse`](https://platform.HuoshanAI.com/docs/api-reference/realtime-server-events/conversation/item/truncated): Returned when a conversation item is truncated.
+- [`ConversationItemDeletedResponse`](https://platform.HuoshanAI.com/docs/api-reference/realtime-server-events/conversation/item/deleted): Returned when a conversation item is deleted.
+- [`InputAudioBufferCommittedResponse`](https://platform.HuoshanAI.com/docs/api-reference/realtime-server-events/input_audio_buffer/committed): Returned when an input audio buffer is committed, either by the client or automatically in server VAD mode.
+- [`InputAudioBufferClearedResponse`](https://platform.HuoshanAI.com/docs/api-reference/realtime-server-events/input_audio_buffer/cleared): Returned when an input audio buffer is cleared.
+- [`InputAudioBufferStartedResponse`](https://platform.HuoshanAI.com/docs/api-reference/realtime-server-events/input_audio_buffer/speech_started): Sent by the server when in server_vad mode to indicate that speech has been detected in the audio buffer. This can happen any time audio is added to the buffer (unless speech is already detected). The client may want to use this event to interrupt audio playback or provide visual feedback to the user.
+- [`InputAudioBufferStoppedResponse`](https://platform.HuoshanAI.com/docs/api-reference/realtime-server-events/input_audio_buffer/speech_stopped): Returned in server_vad mode when the server detects the end of speech in the audio buffer.
+- [`RealtimeResponse`](https://platform.HuoshanAI.com/docs/api-reference/realtime-server-events/response): Returned when a response is created or done.
+- [`ResponseOutputItemResponse`](https://platform.HuoshanAI.com/docs/api-reference/realtime-server-events/response/output_item): Returned when a response output item is added or done.
+- [`ResponseContentPartResponse`](https://platform.HuoshanAI.com/docs/api-reference/realtime-server-events/response/content_part): Returned when a response content part is added or done.
+- [`ResponseTextResponse`](https://platform.HuoshanAI.com/docs/api-reference/realtime-server-events/response/text): Returned when a response text is updated or done.
+- [`ResponseAudioTranscriptResponse`](https://platform.HuoshanAI.com/docs/api-reference/realtime-server-events/response/audio_transcript): Returned when a response audio transcript is updated or done.
+- [`ResponseAudioResponse`](https://platform.HuoshanAI.com/docs/api-reference/realtime-server-events/response/audio): Returned when a response audio is updated or done.
+- [`ResponseFunctionCallArgumentsResponse`](https://platform.HuoshanAI.com/docs/api-reference/realtime-server-events/response/function_call_arguments): Returned when a response function call arguments are updated or done.
+- [`RateLimitsResponse`](https://platform.HuoshanAI.com/docs/api-reference/realtime-server-events/rate_limits): Returned when rate limits are updated.
 
 ##### Receiving Server Events
 
@@ -854,24 +854,24 @@ await foreach (var @event in session.ReceiveUpdatesAsync<IServerEvent>(cts.Token
 
 ---
 
-### [Assistants](https://platform.openai.com/docs/api-reference/assistants)
+### [Assistants](https://platform.HuoshanAI.com/docs/api-reference/assistants)
 
 > [!WARNING]
 > Beta Feature. API subject to breaking changes.
 
 Build assistants that can call models and use tools to perform tasks.
 
-- [Assistants Guide](https://platform.openai.com/docs/assistants)
-- [OpenAI Assistants Cookbook](https://github.com/openai/openai-cookbook/blob/main/examples/Assistants_API_overview_python.ipynb)
+- [Assistants Guide](https://platform.HuoshanAI.com/docs/assistants)
+- [HuoshanAI Assistants Cookbook](https://github.com/HuoshanAI/HuoshanAI-cookbook/blob/main/examples/Assistants_API_overview_python.ipynb)
 
-The Assistants API is accessed via `OpenAIClient.AssistantsEndpoint`
+The Assistants API is accessed via `HuoshanAIClient.AssistantsEndpoint`
 
-#### [List Assistants](https://platform.openai.com/docs/api-reference/assistants/listAssistants)
+#### [List Assistants](https://platform.HuoshanAI.com/docs/api-reference/assistants/listAssistants)
 
 Returns a list of assistants.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var assistantsList = await api.AssistantsEndpoint.ListAssistantsAsync();
 
 foreach (var assistant in assistantsList.Items)
@@ -880,32 +880,32 @@ foreach (var assistant in assistantsList.Items)
 }
 ```
 
-#### [Create Assistant](https://platform.openai.com/docs/api-reference/assistants/createAssistant)
+#### [Create Assistant](https://platform.HuoshanAI.com/docs/api-reference/assistants/createAssistant)
 
 Create an assistant with a model and instructions.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var request = new CreateAssistantRequest(Model.GPT4o);
 var assistant = await api.AssistantsEndpoint.CreateAssistantAsync(request);
 ```
 
-#### [Retrieve Assistant](https://platform.openai.com/docs/api-reference/assistants/getAssistant)
+#### [Retrieve Assistant](https://platform.HuoshanAI.com/docs/api-reference/assistants/getAssistant)
 
 Retrieves an assistant.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var assistant = await api.AssistantsEndpoint.RetrieveAssistantAsync("assistant-id");
 Console.WriteLine($"{assistant} -> {assistant.CreatedAt}");
 ```
 
-#### [Modify Assistant](https://platform.openai.com/docs/api-reference/assistants/modifyAssistant)
+#### [Modify Assistant](https://platform.HuoshanAI.com/docs/api-reference/assistants/modifyAssistant)
 
 Modifies an assistant.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var createRequest = new CreateAssistantRequest(Model.GPT4_Turbo);
 var assistant = await api.AssistantsEndpoint.CreateAssistantAsync(createRequest);
 var modifyRequest = new CreateAssistantRequest(Model.GPT4o);
@@ -914,47 +914,47 @@ var modifiedAssistant = await api.AssistantsEndpoint.ModifyAssistantAsync(assist
 var modifiedAssistantEx = await assistant.ModifyAsync(modifyRequest);
 ```
 
-#### [Delete Assistant](https://platform.openai.com/docs/api-reference/assistants/deleteAssistant)
+#### [Delete Assistant](https://platform.HuoshanAI.com/docs/api-reference/assistants/deleteAssistant)
 
 Delete an assistant.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var isDeleted = await api.AssistantsEndpoint.DeleteAssistantAsync("assistant-id");
 // OR AssistantExtension for easier use!
 var isDeleted = await assistant.DeleteAsync();
 Assert.IsTrue(isDeleted);
 ```
 
-#### [Assistant Streaming](https://platform.openai.com/docs/api-reference/assistants-streaming)
+#### [Assistant Streaming](https://platform.HuoshanAI.com/docs/api-reference/assistants-streaming)
 
 > [!NOTE]
 > Assistant stream events can be easily added to existing thread calls by passing `Func<IServerSentEvent, Task> streamEventHandler` callback to any existing method that supports streaming.
 
-#### [Threads](https://platform.openai.com/docs/api-reference/threads)
+#### [Threads](https://platform.HuoshanAI.com/docs/api-reference/threads)
 
 Create Threads that [Assistants](#assistants) can interact with.
 
-The Threads API is accessed via `OpenAIClient.ThreadsEndpoint`
+The Threads API is accessed via `HuoshanAIClient.ThreadsEndpoint`
 
-##### [Create Thread](https://platform.openai.com/docs/api-reference/threads/createThread)
+##### [Create Thread](https://platform.HuoshanAI.com/docs/api-reference/threads/createThread)
 
 Create a thread.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var thread = await api.ThreadsEndpoint.CreateThreadAsync();
 Console.WriteLine($"Create thread {thread.Id} -> {thread.CreatedAt}");
 ```
 
-##### [Create Thread and Run](https://platform.openai.com/docs/api-reference/runs/createThreadAndRun)
+##### [Create Thread and Run](https://platform.HuoshanAI.com/docs/api-reference/runs/createThreadAndRun)
 
 Create a thread and run it in one request.
 
 > See also: [Thread Runs](#thread-runs)
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var assistant = await api.AssistantsEndpoint.CreateAssistantAsync(
     new CreateAssistantRequest(
         name: "Math Tutor",
@@ -971,7 +971,7 @@ Console.WriteLine($"Created thread and run: {run.ThreadId} -> {run.Id} -> {run.C
 Create a thread and run it in one request while streaming events.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var tools = new List<Tool>
 {
     Tool.GetOrCreateTool(typeof(WeatherService), nameof(WeatherService.GetCurrentWeatherAsync))
@@ -1014,19 +1014,19 @@ foreach (var response in messages.Items.Reverse())
 }
 ```
 
-##### [Retrieve Thread](https://platform.openai.com/docs/api-reference/threads/getThread)
+##### [Retrieve Thread](https://platform.HuoshanAI.com/docs/api-reference/threads/getThread)
 
 Retrieves a thread.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var thread = await api.ThreadsEndpoint.RetrieveThreadAsync("thread-id");
 // OR if you simply wish to get the latest state of a thread
 thread = await thread.UpdateAsync();
 Console.WriteLine($"Retrieve thread {thread.Id} -> {thread.CreatedAt}");
 ```
 
-##### [Modify Thread](https://platform.openai.com/docs/api-reference/threads/modifyThread)
+##### [Modify Thread](https://platform.HuoshanAI.com/docs/api-reference/threads/modifyThread)
 
 Modifies a thread.
 
@@ -1034,7 +1034,7 @@ Modifies a thread.
 > Only the metadata can be modified.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var thread = await api.ThreadsEndpoint.CreateThreadAsync();
 var metadata = new Dictionary<string, string>
 {
@@ -1046,28 +1046,28 @@ thread = await thread.ModifyAsync(metadata);
 Console.WriteLine($"Modify thread {thread.Id} -> {thread.Metadata["key"]}");
 ```
 
-##### [Delete Thread](https://platform.openai.com/docs/api-reference/threads/deleteThread)
+##### [Delete Thread](https://platform.HuoshanAI.com/docs/api-reference/threads/deleteThread)
 
 Delete a thread.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var isDeleted = await api.ThreadsEndpoint.DeleteThreadAsync("thread-id");
 // OR use extension method for convenience!
 var isDeleted = await thread.DeleteAsync();
 Assert.IsTrue(isDeleted);
 ```
 
-##### [Thread Messages](https://platform.openai.com/docs/api-reference/messages)
+##### [Thread Messages](https://platform.HuoshanAI.com/docs/api-reference/messages)
 
 Create messages within threads.
 
-###### [List Thread Messages](https://platform.openai.com/docs/api-reference/messages/listMessages)
+###### [List Thread Messages](https://platform.HuoshanAI.com/docs/api-reference/messages/listMessages)
 
 Returns a list of messages for a given thread.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var messageList = await api.ThreadsEndpoint.ListMessagesAsync("thread-id");
 // OR use extension method for convenience!
 var messageList = await thread.ListMessagesAsync();
@@ -1078,12 +1078,12 @@ foreach (var message in messageList.Items)
 }
 ```
 
-###### [Create Thread Message](https://platform.openai.com/docs/api-reference/messages/createMessage)
+###### [Create Thread Message](https://platform.HuoshanAI.com/docs/api-reference/messages/createMessage)
 
 Create a message.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var thread = await api.ThreadsEndpoint.CreateThreadAsync();
 var request = new CreateMessageRequest("Hello world!");
 var message = await api.ThreadsEndpoint.CreateMessageAsync(thread.Id, request);
@@ -1092,12 +1092,12 @@ var message = await thread.CreateMessageAsync("Hello World!");
 Console.WriteLine($"{message.Id}: {message.Role}: {message.PrintContent()}");
 ```
 
-###### [Retrieve Thread Message](https://platform.openai.com/docs/api-reference/messages/getMessage)
+###### [Retrieve Thread Message](https://platform.HuoshanAI.com/docs/api-reference/messages/getMessage)
 
 Retrieve a message.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var message = await api.ThreadsEndpoint.RetrieveMessageAsync("thread-id", "message-id");
 // OR use extension methods for convenience!
 var message = await thread.RetrieveMessageAsync("message-id");
@@ -1105,7 +1105,7 @@ var message = await message.UpdateAsync();
 Console.WriteLine($"{message.Id}: {message.Role}: {message.PrintContent()}");
 ```
 
-###### [Modify Thread Message](https://platform.openai.com/docs/api-reference/messages/modifyMessage)
+###### [Modify Thread Message](https://platform.HuoshanAI.com/docs/api-reference/messages/modifyMessage)
 
 Modify a message.
 
@@ -1113,7 +1113,7 @@ Modify a message.
 > Only the metadata can be modified.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var metadata = new Dictionary<string, string>
 {
     { "key", "custom message metadata" }
@@ -1124,16 +1124,16 @@ var message = await message.ModifyAsync(metadata);
 Console.WriteLine($"Modify message metadata: {message.Id} -> {message.Metadata["key"]}");
 ```
 
-##### [Thread Runs](https://platform.openai.com/docs/api-reference/runs)
+##### [Thread Runs](https://platform.HuoshanAI.com/docs/api-reference/runs)
 
 Represents an execution run on a thread.
 
-###### [List Thread Runs](https://platform.openai.com/docs/api-reference/runs/listRuns)
+###### [List Thread Runs](https://platform.HuoshanAI.com/docs/api-reference/runs/listRuns)
 
 Returns a list of runs belonging to a thread.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var runList = await api.ThreadsEndpoint.ListRunsAsync("thread-id");
 // OR use extension method for convenience!
 var runList = await thread.ListRunsAsync();
@@ -1144,12 +1144,12 @@ foreach (var run in runList.Items)
 }
 ```
 
-###### [Create Thread Run](https://platform.openai.com/docs/api-reference/runs/createRun)
+###### [Create Thread Run](https://platform.HuoshanAI.com/docs/api-reference/runs/createRun)
 
 Create a run.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var assistant = await api.AssistantsEndpoint.CreateAssistantAsync(
     new CreateAssistantRequest(
         name: "Math Tutor",
@@ -1166,7 +1166,7 @@ Console.WriteLine($"[{run.Id}] {run.Status} | {run.CreatedAt}");
 Create a run and stream the events.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var assistant = await api.AssistantsEndpoint.CreateAssistantAsync(
     new CreateAssistantRequest(
         name: "Math Tutor",
@@ -1188,12 +1188,12 @@ foreach (var response in messages.Items.Reverse())
 }
 ```
 
-###### [Retrieve Thread Run](https://platform.openai.com/docs/api-reference/runs/getRun)
+###### [Retrieve Thread Run](https://platform.HuoshanAI.com/docs/api-reference/runs/getRun)
 
 Retrieves a run.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var run = await api.ThreadsEndpoint.RetrieveRunAsync("thread-id", "run-id");
 // OR use extension method for convenience!
 var run = await thread.RetrieveRunAsync("run-id");
@@ -1201,7 +1201,7 @@ var run = await run.UpdateAsync();
 Console.WriteLine($"[{run.Id}] {run.Status} | {run.CreatedAt}");
 ```
 
-###### [Modify Thread Run](https://platform.openai.com/docs/api-reference/runs/modifyRun)
+###### [Modify Thread Run](https://platform.HuoshanAI.com/docs/api-reference/runs/modifyRun)
 
 Modifies a run.
 
@@ -1209,7 +1209,7 @@ Modifies a run.
 > Only the metadata can be modified.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var metadata = new Dictionary<string, string>
 {
     { "key", "custom run metadata" }
@@ -1220,7 +1220,7 @@ var run = await run.ModifyAsync(metadata);
 Console.WriteLine($"Modify run {run.Id} -> {run.Metadata["key"]}");
 ```
 
-###### [Thread Submit Tool Outputs to Run](https://platform.openai.com/docs/api-reference/runs/submitToolOutputs)
+###### [Thread Submit Tool Outputs to Run](https://platform.HuoshanAI.com/docs/api-reference/runs/submitToolOutputs)
 
 When a run has the status: `requires_action` and `required_action.type` is `submit_tool_outputs`, this endpoint can be used to submit the outputs from the tool calls once they're all completed.
 All outputs must be submitted in a single request.
@@ -1229,7 +1229,7 @@ All outputs must be submitted in a single request.
 > See [Create Thread and Run Streaming](#create-thread-and-run-streaming) example on how to stream tool output events.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var tools = new List<Tool>
 {
     // Use a predefined tool
@@ -1267,7 +1267,7 @@ foreach (var message in messages.Items.OrderBy(response => response.CreatedAt))
 }
 ```
 
-##### [Thread Structured Outputs](https://platform.openai.com/docs/guides/structured-outputs)
+##### [Thread Structured Outputs](https://platform.HuoshanAI.com/docs/guides/structured-outputs)
 
 Structured Outputs is the evolution of JSON mode. While both ensure valid JSON is produced, only Structured Outputs ensure schema adherence.
 
@@ -1306,7 +1306,7 @@ public class MathStep
 To use, simply specify the `MathResponse` type as a generic constraint in either `CreateAssistantAsync`, `CreateRunAsync`, or `CreateThreadAndRunAsync`.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var assistant = await api.AssistantsEndpoint.CreateAssistantAsync<MathResponse>(
     new CreateAssistantRequest(
         name: "Math Tutor",
@@ -1379,7 +1379,7 @@ finally
 You can also manually create json schema json string as well, but you will be responsible for deserializing your response data:
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var mathSchema = new JsonSchema("math_response", @"
 {
   ""type"": ""object"",
@@ -1451,12 +1451,12 @@ finally
 }
 ```
 
-###### [List Thread Run Steps](https://platform.openai.com/docs/api-reference/runs/listRunSteps)
+###### [List Thread Run Steps](https://platform.HuoshanAI.com/docs/api-reference/runs/listRunSteps)
 
 Returns a list of run steps belonging to a run.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var runStepList = await api.ThreadsEndpoint.ListRunStepsAsync("thread-id", "run-id");
 // OR use extension method for convenience!
 var runStepList = await run.ListRunStepsAsync();
@@ -1467,12 +1467,12 @@ foreach (var runStep in runStepList.Items)
 }
 ```
 
-###### [Retrieve Thread Run Step](https://platform.openai.com/docs/api-reference/runs/getRunStep)
+###### [Retrieve Thread Run Step](https://platform.HuoshanAI.com/docs/api-reference/runs/getRunStep)
 
 Retrieves a run step.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var runStep = await api.ThreadsEndpoint.RetrieveRunStepAsync("thread-id", "run-id", "step-id");
 // OR use extension method for convenience!
 var runStep = await run.RetrieveRunStepAsync("step-id");
@@ -1480,32 +1480,32 @@ var runStep = await runStep.UpdateAsync();
 Console.WriteLine($"[{runStep.Id}] {runStep.Status} {runStep.CreatedAt} -> {runStep.ExpiresAt}");
 ```
 
-###### [Cancel Thread Run](https://platform.openai.com/docs/api-reference/runs/cancelRun)
+###### [Cancel Thread Run](https://platform.HuoshanAI.com/docs/api-reference/runs/cancelRun)
 
 Cancels a run that is `in_progress`.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var isCancelled = await api.ThreadsEndpoint.CancelRunAsync("thread-id", "run-id");
 // OR use extension method for convenience!
 var isCancelled = await run.CancelAsync();
 Assert.IsTrue(isCancelled);
 ```
 
-#### [Vector Stores](https://platform.openai.com/docs/api-reference/vector-stores)
+#### [Vector Stores](https://platform.HuoshanAI.com/docs/api-reference/vector-stores)
 
 Vector stores are used to store files for use by the `file_search` tool.
 
-- [File Search Guide](https://platform.openai.com/docs/assistants/tools/file-search)
+- [File Search Guide](https://platform.HuoshanAI.com/docs/assistants/tools/file-search)
 
-The Vector Stores API is accessed via `OpenAIClient.VectorStoresEndpoint`
+The Vector Stores API is accessed via `HuoshanAIClient.VectorStoresEndpoint`
 
-##### [List Vector Stores](https://platform.openai.com/docs/api-reference/vector-stores/list)
+##### [List Vector Stores](https://platform.HuoshanAI.com/docs/api-reference/vector-stores/list)
 
 Returns a list of vector stores.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var vectorStores = await api.VectorStoresEndpoint.ListVectorStoresAsync();
 
 foreach (var vectorStore in vectorStores.Items)
@@ -1514,60 +1514,60 @@ foreach (var vectorStore in vectorStores.Items)
 }
 ```
 
-##### [Create Vector Store](https://platform.openai.com/docs/api-reference/vector-stores/create)
+##### [Create Vector Store](https://platform.HuoshanAI.com/docs/api-reference/vector-stores/create)
 
 Create a vector store.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var createVectorStoreRequest = new CreateVectorStoreRequest("test-vector-store");
 var vectorStore = await api.VectorStoresEndpoint.CreateVectorStoreAsync(createVectorStoreRequest);
 Console.WriteLine(vectorStore);
 ```
 
-##### [Retrieve Vector Store](https://platform.openai.com/docs/api-reference/vector-stores/retrieve)
+##### [Retrieve Vector Store](https://platform.HuoshanAI.com/docs/api-reference/vector-stores/retrieve)
 
 Retrieves a vector store.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var vectorStore = await api.VectorStoresEndpoint.GetVectorStoreAsync("vector-store-id");
 Console.WriteLine(vectorStore);
 ```
 
-##### [Modify Vector Store](https://platform.openai.com/docs/api-reference/vector-stores/modify)
+##### [Modify Vector Store](https://platform.HuoshanAI.com/docs/api-reference/vector-stores/modify)
 
 Modifies a vector store.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var metadata = new Dictionary<string, object> { { "Test", DateTime.UtcNow } };
 var vectorStore = await api.VectorStoresEndpoint.ModifyVectorStoreAsync("vector-store-id", metadata: metadata);
 Console.WriteLine(vectorStore);
 ```
 
-##### [Delete Vector Store](https://platform.openai.com/docs/api-reference/vector-stores/delete)
+##### [Delete Vector Store](https://platform.HuoshanAI.com/docs/api-reference/vector-stores/delete)
 
 Delete a vector store.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var isDeleted = await api.VectorStoresEndpoint.DeleteVectorStoreAsync("vector-store-id");
 Assert.IsTrue(isDeleted);
 ```
 
-##### [Vector Store Files](https://platform.openai.com/docs/api-reference/vector-stores-files)
+##### [Vector Store Files](https://platform.HuoshanAI.com/docs/api-reference/vector-stores-files)
 
 Vector store files represent files inside a vector store.
 
-- [File Search Guide](https://platform.openai.com/docs/assistants/tools/file-search)
+- [File Search Guide](https://platform.HuoshanAI.com/docs/assistants/tools/file-search)
 
-###### [List Vector Store Files](https://platform.openai.com/docs/api-reference/vector-stores-files/listFiles)
+###### [List Vector Store Files](https://platform.HuoshanAI.com/docs/api-reference/vector-stores-files/listFiles)
 
 Returns a list of vector store files.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var files = await api.VectorStoresEndpoint.ListVectorStoreFilesAsync("vector-store-id");
 
 foreach (var file in vectorStoreFiles.Items)
@@ -1576,71 +1576,71 @@ foreach (var file in vectorStoreFiles.Items)
 }
 ```
 
-###### [Create Vector Store File](https://platform.openai.com/docs/api-reference/vector-stores-files/createFile)
+###### [Create Vector Store File](https://platform.HuoshanAI.com/docs/api-reference/vector-stores-files/createFile)
 
 Create a vector store file by attaching a file to a vector store.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var file = await api.VectorStoresEndpoint.CreateVectorStoreFileAsync("vector-store-id", "file-id", new ChunkingStrategy(ChunkingStrategyType.Static));
 Console.WriteLine(file);
 ```
 
-###### [Retrieve Vector Store File](https://platform.openai.com/docs/api-reference/vector-stores-files/getFile)
+###### [Retrieve Vector Store File](https://platform.HuoshanAI.com/docs/api-reference/vector-stores-files/getFile)
 
 Retrieves a vector store file.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var file = await api.VectorStoresEndpoint.GetVectorStoreFileAsync("vector-store-id", "vector-store-file-id");
 Console.WriteLine(file);
 ```
 
-###### [Delete Vector Store File](https://platform.openai.com/docs/api-reference/vector-stores-files/deleteFile)
+###### [Delete Vector Store File](https://platform.HuoshanAI.com/docs/api-reference/vector-stores-files/deleteFile)
 
 Delete a vector store file. This will remove the file from the vector store but the file itself will not be deleted. To delete the file, use the delete file endpoint.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var isDeleted = await api.VectorStoresEndpoint.DeleteVectorStoreFileAsync("vector-store-id", vectorStoreFile);
 Assert.IsTrue(isDeleted);
 ```
 
-##### [Vector Store File Batches](https://platform.openai.com/docs/api-reference/vector-stores-file-batches)
+##### [Vector Store File Batches](https://platform.HuoshanAI.com/docs/api-reference/vector-stores-file-batches)
 
 Vector store files represent files inside a vector store.
 
-- [File Search Guide](https://platform.openai.com/docs/assistants/tools/file-search)
+- [File Search Guide](https://platform.HuoshanAI.com/docs/assistants/tools/file-search)
 
-###### [Create Vector Store File Batch](https://platform.openai.com/docs/api-reference/vector-stores-file-batches/createBatch)
+###### [Create Vector Store File Batch](https://platform.HuoshanAI.com/docs/api-reference/vector-stores-file-batches/createBatch)
 
 Create a vector store file batch.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var files = new List<string> { "file_id_1","file_id_2" };
 var vectorStoreFileBatch = await api.VectorStoresEndpoint.CreateVectorStoreFileBatchAsync("vector-store-id", files);
 Console.WriteLine(vectorStoreFileBatch);
 ```
 
-###### [Retrieve Vector Store File Batch](https://platform.openai.com/docs/api-reference/vector-stores-file-batches/getBatch)
+###### [Retrieve Vector Store File Batch](https://platform.HuoshanAI.com/docs/api-reference/vector-stores-file-batches/getBatch)
 
 Retrieves a vector store file batch.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var vectorStoreFileBatch = await api.VectorStoresEndpoint.GetVectorStoreFileBatchAsync("vector-store-id", "vector-store-file-batch-id");
 // you can also use convenience methods!
 vectorStoreFileBatch = await vectorStoreFileBatch.UpdateAsync();
 vectorStoreFileBatch = await vectorStoreFileBatch.WaitForStatusChangeAsync();
 ```
 
-###### [List Files In Vector Store Batch](https://platform.openai.com/docs/api-reference/vector-stores-file-batches/listBatchFiles)
+###### [List Files In Vector Store Batch](https://platform.HuoshanAI.com/docs/api-reference/vector-stores-file-batches/listBatchFiles)
 
 Returns a list of vector store files in a batch.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var files = await api.VectorStoresEndpoint.ListVectorStoreBatchFilesAsync("vector-store-id", "vector-store-file-batch-id");
 
 foreach (var file in files.Items)
@@ -1649,29 +1649,29 @@ foreach (var file in files.Items)
 }
 ```
 
-###### [Cancel Vector Store File Batch](https://platform.openai.com/docs/api-reference/vector-stores-file-batches/cancelBatch)
+###### [Cancel Vector Store File Batch](https://platform.HuoshanAI.com/docs/api-reference/vector-stores-file-batches/cancelBatch)
 
 Cancel a vector store file batch. This attempts to cancel the processing of files in this batch as soon as possible.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var isCancelled = await api.VectorStoresEndpoint.CancelVectorStoreFileBatchAsync("vector-store-id", "vector-store-file-batch-id");
 ```
 
 ---
 
-### [Chat](https://platform.openai.com/docs/api-reference/chat)
+### [Chat](https://platform.HuoshanAI.com/docs/api-reference/chat)
 
 Given a chat conversation, the model will return a chat completion response.
 
-The Chat API is accessed via `OpenAIClient.ChatEndpoint`
+The Chat API is accessed via `HuoshanAIClient.ChatEndpoint`
 
-#### [Chat Completions](https://platform.openai.com/docs/api-reference/chat/create)
+#### [Chat Completions](https://platform.HuoshanAI.com/docs/api-reference/chat/create)
 
 Creates a completion for the chat message
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var messages = new List<Message>
 {
     new Message(Role.System, "You are a helpful assistant."),
@@ -1685,10 +1685,10 @@ var choice = response.FirstChoice;
 Console.WriteLine($"[{choice.Index}] {choice.Message.Role}: {choice.Message} | Finish Reason: {choice.FinishReason}");
 ```
 
-#### [Chat Streaming](https://platform.openai.com/docs/api-reference/chat/create#chat/create-stream)
+#### [Chat Streaming](https://platform.HuoshanAI.com/docs/api-reference/chat/create#chat/create-stream)
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var messages = new List<Message>
 {
     new Message(Role.System, "You are a helpful assistant."),
@@ -1709,7 +1709,7 @@ Console.WriteLine($"[{choice.Index}] {choice.Message.Role}: {choice.Message} | F
 Or if using [`IAsyncEnumerable{T}`](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.iasyncenumerable-1?view=net-5.0) ([C# 8.0+](https://docs.microsoft.com/en-us/archive/msdn-magazine/2019/november/csharp-iterating-with-async-enumerables-in-csharp-8))
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var messages = new List<Message>
 {
     new Message(Role.System, "You are a helpful assistant."),
@@ -1730,10 +1730,10 @@ await foreach (var partialResponse in api.ChatEndpoint.StreamCompletionEnumerabl
 Console.WriteLine(cumulativeDelta);
 ```
 
-#### [Chat Tools](https://platform.openai.com/docs/guides/function-calling)
+#### [Chat Tools](https://platform.HuoshanAI.com/docs/guides/function-calling)
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var messages = new List<Message>
 {
     new(Role.System, "You are a helpful weather assistant. Always prompt the user for their location."),
@@ -1803,13 +1803,13 @@ foreach (var toolCall in response.FirstChoice.Message.ToolCalls)
 // Tool: The current weather in Glasgow, Scotland is 39°C.
 ```
 
-#### [Chat Vision](https://platform.openai.com/docs/guides/vision)
+#### [Chat Vision](https://platform.HuoshanAI.com/docs/guides/vision)
 
 > [!WARNING]
 > Beta Feature. API subject to breaking changes.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var messages = new List<Message>
 {
     new Message(Role.System, "You are a helpful assistant."),
@@ -1824,10 +1824,10 @@ var response = await api.ChatEndpoint.GetCompletionAsync(chatRequest);
 Console.WriteLine($"{response.FirstChoice.Message.Role}: {response.FirstChoice.Message.Content} | Finish Reason: {response.FirstChoice.FinishDetails}");
 ```
 
-#### [Chat Audio](https://platform.openai.com/docs/guides/audio)
+#### [Chat Audio](https://platform.HuoshanAI.com/docs/guides/audio)
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var messages = new List<Message>
 {
     new Message(Role.System, "You are a helpful assistant."),
@@ -1839,7 +1839,7 @@ Console.WriteLine($"{response.FirstChoice.Message.Role}: {response.FirstChoice} 
 // todo play response.FirstChoice.Message.AudioOutput.Data
 ```
 
-#### [Chat Structured Outputs](https://platform.openai.com/docs/guides/structured-outputs)
+#### [Chat Structured Outputs](https://platform.HuoshanAI.com/docs/guides/structured-outputs)
 
 The evolution of  [Json Mode](#chat-json-mode). While both ensure valid JSON is produced, only Structured Outputs ensure schema adherence.
 
@@ -1878,7 +1878,7 @@ public class MathStep
 To use, simply specify the `MathResponse` type as a generic constraint when requesting a completion.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var messages = new List<Message>
 {
     new(Role.System, "You are a helpful math tutor. Guide the user through the solution step by step."),
@@ -1899,7 +1899,7 @@ Console.WriteLine($"Final Answer: {mathResponse.FinalAnswer}");
 chatResponse.GetUsage();
 ```
 
-#### [Chat Json Mode](https://platform.openai.com/docs/guides/text-generation/json-mode)
+#### [Chat Json Mode](https://platform.HuoshanAI.com/docs/guides/text-generation/json-mode)
 
 > [!IMPORTANT]
 >
@@ -1926,18 +1926,18 @@ response.GetUsage();
 
 ---
 
-### [Audio](https://platform.openai.com/docs/api-reference/audio)
+### [Audio](https://platform.HuoshanAI.com/docs/api-reference/audio)
 
 Converts audio into text.
 
-The Audio API is accessed via `OpenAIClient.AudioEndpoint`
+The Audio API is accessed via `HuoshanAIClient.AudioEndpoint`
 
-#### [Create Speech](https://platform.openai.com/docs/api-reference/audio/createSpeech)
+#### [Create Speech](https://platform.HuoshanAI.com/docs/api-reference/audio/createSpeech)
 
 Generates audio from the input text.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var request = new SpeechRequest("Hello World!");
 async Task ChunkCallback(ReadOnlyMemory<byte> chunkCallback)
 {
@@ -1949,12 +1949,12 @@ var response = await api.AudioEndpoint.CreateSpeechAsync(request, ChunkCallback)
 await File.WriteAllBytesAsync("../../../Assets/HelloWorld.mp3", response.ToArray());
 ```
 
-#### [Create Transcription](https://platform.openai.com/docs/api-reference/audio/createTranscription)
+#### [Create Transcription](https://platform.HuoshanAI.com/docs/api-reference/audio/createTranscription)
 
 Transcribes audio into the input language.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 using var request = new AudioTranscriptionRequest(Path.GetFullPath(audioAssetPath), language: "en");
 var response = await api.AudioEndpoint.CreateTranscriptionTextAsync(request);
 Console.WriteLine(response);
@@ -1963,7 +1963,7 @@ Console.WriteLine(response);
 You can also get detailed information using `verbose_json` to get timestamp granularities:
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 using var request = new AudioTranscriptionRequest(transcriptionAudio, responseFormat: AudioResponseFormat.Verbose_Json, timestampGranularity: TimestampGranularity.Word, temperature: 0.1f, language: "en");
 var response = await api.AudioEndpoint.CreateTranscriptionTextAsync(request);
 
@@ -1973,12 +1973,12 @@ foreach (var word in response.Words)
 }
 ```
 
-#### [Create Translation](https://platform.openai.com/docs/api-reference/audio/createTranslation)
+#### [Create Translation](https://platform.HuoshanAI.com/docs/api-reference/audio/createTranslation)
 
 Translates audio into into English.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 using var request = new AudioTranslationRequest(Path.GetFullPath(audioAssetPath));
 var response = await api.AudioEndpoint.CreateTranslationTextAsync(request);
 Console.WriteLine(response);
@@ -1986,18 +1986,18 @@ Console.WriteLine(response);
 
 ---
 
-### [Images](https://platform.openai.com/docs/api-reference/images)
+### [Images](https://platform.HuoshanAI.com/docs/api-reference/images)
 
 Given a prompt and/or an input image, the model will generate a new image.
 
-The Images API is accessed via `OpenAIClient.ImagesEndpoint`
+The Images API is accessed via `HuoshanAIClient.ImagesEndpoint`
 
-#### [Create Image](https://platform.openai.com/docs/api-reference/images/create)
+#### [Create Image](https://platform.HuoshanAI.com/docs/api-reference/images/create)
 
 Creates an image given a prompt.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var request = new ImageGenerationRequest("A house riding a velociraptor", Models.Model.DallE_3);
 var imageResults = await api.ImagesEndPoint.GenerateImageAsync(request);
 
@@ -2008,12 +2008,12 @@ foreach (var image in imageResults)
 }
 ```
 
-#### [Edit Image](https://platform.openai.com/docs/api-reference/images/create-edit)
+#### [Edit Image](https://platform.HuoshanAI.com/docs/api-reference/images/create-edit)
 
 Creates an edited or extended image given an original image and a prompt.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var request = new ImageEditRequest(imageAssetPath, maskAssetPath, "A sunlit indoor lounge area with a pool containing a flamingo", size: ImageSize.Small);
 var imageResults = await api.ImagesEndPoint.CreateImageEditAsync(request);
 
@@ -2024,12 +2024,12 @@ foreach (var image in imageResults)
 }
 ```
 
-#### [Create Image Variation](https://platform.openai.com/docs/api-reference/images/create-variation)
+#### [Create Image Variation](https://platform.HuoshanAI.com/docs/api-reference/images/create-variation)
 
 Creates a variation of a given image.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var request = new ImageVariationRequest(imageAssetPath, size: ImageSize.Small);
 var imageResults = await api.ImagesEndPoint.CreateImageVariationAsync(request);
 
@@ -2042,18 +2042,18 @@ foreach (var image in imageResults)
 
 ---
 
-### [Files](https://platform.openai.com/docs/api-reference/files)
+### [Files](https://platform.HuoshanAI.com/docs/api-reference/files)
 
 Files are used to upload documents that can be used with features like [Fine-tuning](#fine-tuning).
 
-The Files API is accessed via `OpenAIClient.FilesEndpoint`
+The Files API is accessed via `HuoshanAIClient.FilesEndpoint`
 
-#### [List Files](https://platform.openai.com/docs/api-reference/files/list)
+#### [List Files](https://platform.HuoshanAI.com/docs/api-reference/files/list)
 
 Returns a list of files that belong to the user's organization.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var fileList = await api.FilesEndpoint.ListFilesAsync();
 
 foreach (var file in fileList)
@@ -2062,44 +2062,44 @@ foreach (var file in fileList)
 }
 ```
 
-#### [Upload File](https://platform.openai.com/docs/api-reference/files/create)
+#### [Upload File](https://platform.HuoshanAI.com/docs/api-reference/files/create)
 
 Upload a file that can be used across various endpoints. The size of all the files uploaded by one organization can be up to 100 GB.
 
 The size of individual files can be a maximum of 512 MB. See the Assistants Tools guide to learn more about the types of files supported. The Fine-tuning API only supports .jsonl files.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var file = await api.FilesEndpoint.UploadFileAsync("path/to/your/file.jsonl", FilePurpose.FineTune);
 Console.WriteLine(file.Id);
 ```
 
-#### [Delete File](https://platform.openai.com/docs/api-reference/files/delete)
+#### [Delete File](https://platform.HuoshanAI.com/docs/api-reference/files/delete)
 
 Delete a file.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var isDeleted = await api.FilesEndpoint.DeleteFileAsync(fileId);
 Assert.IsTrue(isDeleted);
 ```
 
-#### [Retrieve File Info](https://platform.openai.com/docs/api-reference/files/retrieve)
+#### [Retrieve File Info](https://platform.HuoshanAI.com/docs/api-reference/files/retrieve)
 
 Returns information about a specific file.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var file = await api.FilesEndpoint.GetFileInfoAsync(fileId);
 Console.WriteLine($"{file.Id} -> {file.Object}: {file.FileName} | {file.Size} bytes");
 ```
 
-#### [Download File Content](https://platform.openai.com/docs/api-reference/files/retrieve-content)
+#### [Download File Content](https://platform.HuoshanAI.com/docs/api-reference/files/retrieve-content)
 
 Downloads the file content to the specified directory.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var downloadedFilePath = await api.FilesEndpoint.DownloadFileAsync(fileId, "path/to/your/save/directory");
 Console.WriteLine(downloadedFilePath);
 Assert.IsTrue(File.Exists(downloadedFilePath));
@@ -2107,34 +2107,34 @@ Assert.IsTrue(File.Exists(downloadedFilePath));
 
 ---
 
-### [Fine Tuning](https://platform.openai.com/docs/api-reference/fine-tuning)
+### [Fine Tuning](https://platform.HuoshanAI.com/docs/api-reference/fine-tuning)
 
 Manage fine-tuning jobs to tailor a model to your specific training data.
 
-Related guide: [Fine-tune models](https://platform.openai.com/docs/guides/fine-tuning)
+Related guide: [Fine-tune models](https://platform.HuoshanAI.com/docs/guides/fine-tuning)
 
-The Files API is accessed via `OpenAIClient.FineTuningEndpoint`
+The Files API is accessed via `HuoshanAIClient.FineTuningEndpoint`
 
-#### [Create Fine Tune Job](https://platform.openai.com/docs/api-reference/fine-tuning/create)
+#### [Create Fine Tune Job](https://platform.HuoshanAI.com/docs/api-reference/fine-tuning/create)
 
 Creates a job that fine-tunes a specified model from a given dataset.
 
 Response includes details of the enqueued job including job status and the name of the fine-tuned models once complete.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var fileId = "file-abc123";
 var request = new CreateFineTuneRequest(fileId);
 var job = await api.FineTuningEndpoint.CreateJobAsync(Model.GPT3_5_Turbo, request);
 Console.WriteLine($"Started {job.Id} | Status: {job.Status}");
 ```
 
-#### [List Fine Tune Jobs](https://platform.openai.com/docs/api-reference/fine-tuning/list)
+#### [List Fine Tune Jobs](https://platform.HuoshanAI.com/docs/api-reference/fine-tuning/list)
 
 List your organization's fine-tuning jobs.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var jobList = await api.FineTuningEndpoint.ListJobsAsync();
 
 foreach (var job in jobList.Items.OrderByDescending(job => job.CreatedAt))
@@ -2143,32 +2143,32 @@ foreach (var job in jobList.Items.OrderByDescending(job => job.CreatedAt))
 }
 ```
 
-#### [Retrieve Fine Tune Job Info](https://platform.openai.com/docs/api-reference/fine-tuning/retrieve)
+#### [Retrieve Fine Tune Job Info](https://platform.HuoshanAI.com/docs/api-reference/fine-tuning/retrieve)
 
 Gets info about the fine-tune job.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var job = await api.FineTuningEndpoint.GetJobInfoAsync(fineTuneJob);
 Console.WriteLine($"{job.Id} -> {job.CreatedAt} | {job.Status}");
 ```
 
-#### [Cancel Fine Tune Job](https://platform.openai.com/docs/api-reference/fine-tuning/cancel)
+#### [Cancel Fine Tune Job](https://platform.HuoshanAI.com/docs/api-reference/fine-tuning/cancel)
 
 Immediately cancel a fine-tune job.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var isCancelled = await api.FineTuningEndpoint.CancelFineTuneJobAsync(fineTuneJob);
 Assert.IsTrue(isCancelled);
 ```
 
-#### [List Fine Tune Job Events](https://platform.openai.com/docs/api-reference/fine-tuning/list-events)
+#### [List Fine Tune Job Events](https://platform.HuoshanAI.com/docs/api-reference/fine-tuning/list-events)
 
 Get status updates for a fine-tuning job.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var eventList = await api.FineTuningEndpoint.ListJobEventsAsync(fineTuneJob);
 Console.WriteLine($"{fineTuneJob.Id} -> status: {fineTuneJob.Status} | event count: {eventList.Events.Count}");
 
@@ -2180,20 +2180,20 @@ foreach (var @event in eventList.Items.OrderByDescending(@event => @event.Create
 
 ---
 
-### [Batches](https://platform.openai.com/docs/api-reference/batch)
+### [Batches](https://platform.HuoshanAI.com/docs/api-reference/batch)
 
 Create large batches of API requests for asynchronous processing. The Batch API returns completions within 24 hours for a 50% discount.
 
-- [Batch Guide](https://platform.openai.com/docs/guides/batch)
+- [Batch Guide](https://platform.HuoshanAI.com/docs/guides/batch)
 
-The Batches API is accessed via `OpenAIClient.BatchesEndpoint`
+The Batches API is accessed via `HuoshanAIClient.BatchesEndpoint`
 
-#### [List Batches](https://platform.openai.com/docs/api-reference/batch/list)
+#### [List Batches](https://platform.HuoshanAI.com/docs/api-reference/batch/list)
 
 List your organization's batches.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var batches = await api.BatchEndpoint.ListBatchesAsync();
 
 foreach (var batch in listResponse.Items)
@@ -2202,74 +2202,74 @@ foreach (var batch in listResponse.Items)
 }
 ```
 
-#### [Create Batch](https://platform.openai.com/docs/api-reference/batch/create)
+#### [Create Batch](https://platform.HuoshanAI.com/docs/api-reference/batch/create)
 
 Creates and executes a batch from an uploaded file of requests
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var batchRequest = new CreateBatchRequest("file-id", Endpoint.ChatCompletions);
 var batch = await api.BatchEndpoint.CreateBatchAsync(batchRequest);
 ```
 
-#### [Retrieve Batch](https://platform.openai.com/docs/api-reference/batch/retrieve)
+#### [Retrieve Batch](https://platform.HuoshanAI.com/docs/api-reference/batch/retrieve)
 
 Retrieves a batch.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var batch = await api.BatchEndpoint.RetrieveBatchAsync("batch-id");
 // you can also use convenience methods!
 batch = await batch.UpdateAsync();
 batch = await batch.WaitForStatusChangeAsync();
 ```
 
-#### [Cancel Batch](https://platform.openai.com/docs/api-reference/batch/cancel)
+#### [Cancel Batch](https://platform.HuoshanAI.com/docs/api-reference/batch/cancel)
 
 Cancels an in-progress batch. The batch will be in status cancelling for up to 10 minutes, before changing to cancelled, where it will have partial results (if any) available in the output file.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var isCancelled = await api.BatchEndpoint.CancelBatchAsync(batch);
 Assert.IsTrue(isCancelled);
 ```
 
 ---
 
-### [Embeddings](https://platform.openai.com/docs/api-reference/embeddings)
+### [Embeddings](https://platform.HuoshanAI.com/docs/api-reference/embeddings)
 
 Get a vector representation of a given input that can be easily consumed by machine learning models and algorithms.
 
-Related guide: [Embeddings](https://platform.openai.com/docs/guides/embeddings)
+Related guide: [Embeddings](https://platform.HuoshanAI.com/docs/guides/embeddings)
 
-The Edits API is accessed via `OpenAIClient.EmbeddingsEndpoint`
+The Edits API is accessed via `HuoshanAIClient.EmbeddingsEndpoint`
 
-#### [Create Embeddings](https://platform.openai.com/docs/api-reference/embeddings/create)
+#### [Create Embeddings](https://platform.HuoshanAI.com/docs/api-reference/embeddings/create)
 
 Creates an embedding vector representing the input text.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var response = await api.EmbeddingsEndpoint.CreateEmbeddingAsync("The food was delicious and the waiter...", Models.Embedding_Ada_002);
 Console.WriteLine(response);
 ```
 
 ---
 
-### [Moderations](https://platform.openai.com/docs/api-reference/moderations)
+### [Moderations](https://platform.HuoshanAI.com/docs/api-reference/moderations)
 
-Given a input text, outputs if the model classifies it as violating OpenAI's content policy.
+Given a input text, outputs if the model classifies it as violating HuoshanAI's content policy.
 
-Related guide: [Moderations](https://platform.openai.com/docs/guides/moderation)
+Related guide: [Moderations](https://platform.HuoshanAI.com/docs/guides/moderation)
 
-The Moderations API can be accessed via `OpenAIClient.ModerationsEndpoint`
+The Moderations API can be accessed via `HuoshanAIClient.ModerationsEndpoint`
 
-#### [Create Moderation](https://platform.openai.com/docs/api-reference/moderations/create)
+#### [Create Moderation](https://platform.HuoshanAI.com/docs/api-reference/moderations/create)
 
-Classifies if text violates OpenAI's Content Policy.
+Classifies if text violates HuoshanAI's Content Policy.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var isViolation = await api.ModerationsEndpoint.GetModerationAsync("I want to kill them.");
 Assert.IsTrue(isViolation);
 ```
@@ -2277,7 +2277,7 @@ Assert.IsTrue(isViolation);
 Additionally you can also get the scores of a given input.
 
 ```csharp
-using var api = new OpenAIClient();
+using var api = new HuoshanAIClient();
 var response = await api.ModerationsEndpoint.CreateModerationAsync(new ModerationsRequest("I love you"));
 Assert.IsNotNull(response);
 Console.WriteLine(response.Results?[0]?.Scores?.ToString());

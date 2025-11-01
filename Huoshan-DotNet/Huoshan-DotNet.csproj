@@ -1,0 +1,61 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Title>HuoshanAI-DotNet</Title>
+    <Product>HuoshanAI-DotNet</Product>
+    <PackageId>HuoshanAI-DotNet</PackageId>
+    <RootNamespace>HuoshanAI</RootNamespace>
+    <Company>RageAgainstThePixel</Company>
+    <Authors>Stephen Hodgson, Roger Pincombe</Authors>
+    <Description>A simple C# .NET client library for HuoshanAI to use though their RESTful API.
+Independently developed, this is not an official library and I am not affiliated with HuoshanAI.
+An HuoshanAI API account is required.
+
+Forked from [OpenAI-API-dotnet](https://github.com/OkGoDoIt/OpenAI-API-dotnet).
+More context [on Roger Pincombe's blog](https://rogerpincombe.com/OpenAI-dotnet-api).
+    </Description>
+    <Copyright>2024</Copyright>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <PackageProjectUrl>https://github.com/RageAgainstThePixel/OpenAI-DotNet</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/RageAgainstThePixel/OpenAI-DotNet</RepositoryUrl>
+    <PackageTags>OpenAI, AI, ML, API, o1, o3, gpt-4o, gpt-4-turbo, dall-e-3</PackageTags>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageIcon>Assets\OpenAI-DotNet-Icon.png</PackageIcon>
+    <DelaySign>true</DelaySign>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>OpenAI-DotNet.pfx</AssemblyOriginatorKeyFile>
+    <IncludeSymbols>true</IncludeSymbols>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Version>8.8.3</Version>
+    <PackageReleaseNotes>
+    </PackageReleaseNotes>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>true</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>true</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Assets\OpenAI-DotNet-Icon.png">
+      <Pack>true</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub"
+      Version="8.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>
